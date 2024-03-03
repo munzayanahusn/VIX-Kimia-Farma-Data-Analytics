@@ -27,3 +27,28 @@ FROM kimia_farma.kf_final_transaction AS tr
   LEFT JOIN kimia_farma.kf_product AS pd
   ON (tr.product_id = pd.product_id)
 ;
+
+CREATE TABLE kimia_farma.kf_branch_analysis AS
+SELECT kc.branch_id, 
+  kc.branch_name, 
+  AVG(tr.rating) AS rating_transaction,
+  kc.rating AS rating_branch
+FROM kimia_farma.kf_kantor_cabang AS kc
+  LEFT JOIN kimia_farma.kf_final_transaction AS tr
+  ON (kc.branch_id = tr.branch_id)
+GROUP BY kc.branch_id, kc.branch_name, kc.rating
+ORDER BY AVG(tr.rating) ASC, kc.rating DESC
+;
+
+CREATE TABLE kimia_farma.kf_branch_analysis_lim AS
+SELECT kc.branch_id, 
+  kc.branch_name, 
+  AVG(tr.rating) AS rating_transaction,
+  kc.rating AS rating_branch
+FROM kimia_farma.kf_kantor_cabang AS kc
+  LEFT JOIN kimia_farma.kf_final_transaction AS tr
+  ON (kc.branch_id = tr.branch_id)
+GROUP BY kc.branch_id, kc.branch_name, kc.rating
+ORDER BY AVG(tr.rating) ASC, kc.rating DESC
+LIMIT 5
+;
