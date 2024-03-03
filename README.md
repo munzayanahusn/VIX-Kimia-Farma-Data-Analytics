@@ -19,7 +19,7 @@ The dataset provided consists of the following tables:
 
 **Tools** <br>
 Tool : Google Cloud BigQuery <br>
-Visualization : Looker Data Studio - [https://lookerstudio.google.com/s/oe7etH9ABsQ](https://lookerstudio.google.com/s/oe7etH9ABsQ) <br>
+Visualization : Looker Data Studio - [https://lookerstudio.google.com/s/qgr_JPexnm8](https://lookerstudio.google.com/s/qgr_JPexnm8) <br>
 
 ---
 
@@ -99,7 +99,7 @@ FROM kimia_farma.kf_final_transaction AS tr
 
 ## **Data Visualization**
 
-[[See Looker Studio](https://lookerstudio.google.com/s/oe7etH9ABsQ](https://lookerstudio.google.com/s/oe7etH9ABsQ)
+[[See Looker Studio](https://lookerstudio.google.com/s/qgr_JPexnm8)
 
 To support visualization, a new table was generated to explore the top five branches with the best ratings but the lowest transaction ratings:
 <details>
