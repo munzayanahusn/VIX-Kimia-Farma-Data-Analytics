@@ -1,4 +1,5 @@
 # **Virtual Internship Experience: Big Data Analytics - Kimia Farma**
+Contributor : Husnia Munzayana
 
 ## **Program Description**
 In my role as a Big Data Analytics Intern at Kimia Farma, I am tasked with analyzing the business performance of the company spanning from 2020 to 2023. My responsibilities include creating an analysis table and presenting reports through a dashboard to assess Kimia Farma's business performance throughout the specified timeframe. The analysis table was implemented using the BigQuery platform, while the dashboard was developed using Looker Studio.<br>
