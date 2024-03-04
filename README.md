@@ -125,7 +125,7 @@ LIMIT 5
 <br>
 
 <p align="center">
-    <kbd> <img width="1000" alt="kimia farma dashboard" src="./dashboard/VIX_-_Husnia_Munzayana_-_Performance_Analytics_Kimia_Farma_Business_Year_2020-2023-1.png"> </kbd> <br>
+    <kbd> <img width="1000" alt="kimia farma dashboard" src="./VIX_-_Husnia_Munzayana_-_Performance_Analytics_Kimia_Farma_Business_Year_2020-2023-1.png"> </kbd> <br>
     Performance Analytics Kimia Farma Dashboard
 </p>
 <br>
