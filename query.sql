@@ -19,7 +19,13 @@ SELECT tr.transaction_id,
     ELSE 0.3      --pd.price >500000 
     END AS persentase_gross_laba,
   (pd.price * (1-tr.discount_percentage)) AS nett_sales,
-  ((tr.price * (1-tr.discount_percentage)) - pd.price)AS nett_profit,
+  (pd.price * (1 - tr.discount_percentage)) * CASE
+                                                WHEN pd.price <= 50000 THEN 0.1
+                                                WHEN pd.price <= 100000 THEN 0.15
+                                                WHEN pd.price <= 300000 THEN 0.2
+                                                WHEN pd.price <= 500000 THEN 0.25
+                                                ELSE 0.3
+                                              END AS nett_profit,
   tr.rating AS rating_transaksi
 FROM kimia_farma.kf_final_transaction AS tr 
   LEFT JOIN kimia_farma.kf_kantor_cabang AS kc 
