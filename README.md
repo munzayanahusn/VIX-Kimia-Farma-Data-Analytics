@@ -15,7 +15,7 @@ The dataset provided consists of the following tables:
 - kf_inventory
 - kf_kantor_cabang
 - kf_product
-> The dataset can also be accessed through the folder: raw-data
+> The dataset can also be accessed through the folder: dataset/raw-data
 <br>
 
 **Tools** <br>
@@ -90,6 +90,8 @@ FROM kimia_farma.kf_final_transaction AS tr
 </details>
 <br>
 
+> The query can also be accessed through the file: query.sql
+
 <p align="center">
     <kbd> <img width="1000" alt="analysis result" src="./assets/analysis-result.png"> </kbd> <br>
     Tabel Hasil Analisis
@@ -100,7 +102,7 @@ FROM kimia_farma.kf_final_transaction AS tr
 
 ## **Data Visualization**
 
-[[See Looker Studio](https://lookerstudio.google.com/s/qgr_JPexnm8)
+[See Looker Studio](https://lookerstudio.google.com/s/qgr_JPexnm8)
 
 To support visualization, a new table was generated to explore the top five branches with the best ratings but the lowest transaction ratings:
 <details>
@@ -124,6 +126,8 @@ LIMIT 5
 <br>
 </details>
 <br>
+
+> The query can also be accessed through the file: query.sql
 
 <p align="center">
     <kbd> <img width="1000" alt="kimia farma dashboard" src="./dashboard/VIX_-_Husnia_Munzayana_-_Performance_Analytics_Kimia_Farma_Business_Year_2020-2023.png"> </kbd> <br>
